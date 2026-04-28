@@ -1,0 +1,38 @@
+{
+  "task": "named-entity-recognition",
+  "language": "id",
+  "base_model": "indobenchmark/indobert-base-p2",
+  "architecture": "BERT (indobert-base-p2) + WeightedLossTrainer",
+  "entities": [
+    "LOC"
+  ],
+  "label2id": {
+    "O": 0,
+    "B-LOC": 1,
+    "I-LOC": 2
+  },
+  "id2label": {
+    "0": "O",
+    "1": "B-LOC",
+    "2": "I-LOC"
+  },
+  "max_length": 128,
+  "do_lower_case": true,
+  "tokenizer_type": "BertTokenizer",
+  "train_sentences": 884,
+  "val_sentences": 111,
+  "test_sentences": 111,
+  "split": "80/10/10 stratified",
+  "loss_function": "WeightedCrossEntropyLoss",
+  "class_weights": {
+    "O": 1.0,
+    "B-LOC": 4.849544525146484,
+    "I-LOC": 3.695106029510498
+  },
+  "learning_rate": 2e-05,
+  "batch_size": 16,
+  "fix_alignment": "Switched ALBERT→BERT WordPiece for reliable word_ids()",
+  "fix_class_imbalance": "WeightedLossTrainer with sqrt inverse freq weights",
+  "fix_casing": "do_lower_case=True, indobert-base-p2 is uncased",
+  "test_f1_LOC": 0.9397
+}
