@@ -17,29 +17,29 @@
   "max_length": 128,
   "quantization": "none (FP32)",
   "dataset_info": {
-    "total_after_dedup": 1478,
-    "dedup_removed": 20,
+    "total_after_dedup": 1514,
+    "dedup_removed": 21,
     "split": "80/10/10 stratified",
-    "train_size": 1182,
-    "val_size": 148,
-    "test_size": 148
+    "train_size": 1210,
+    "val_size": 152,
+    "test_size": 152
   },
   "evaluation_test": {
-    "f1_macro": 0.9782,
-    "accuracy": 0.9797,
-    "precision_macro": 0.9782,
-    "recall_macro": 0.9797,
+    "f1_macro": 0.9594,
+    "accuracy": 0.9605,
+    "precision_macro": 0.9642,
+    "recall_macro": 0.9567,
     "f1_per_class": {
       "Rendah": 1.0,
-      "Sedang": 0.9855,
-      "Tinggi": 0.9577,
-      "Unknown": 0.9697
+      "Sedang": 0.9231,
+      "Tinggi": 0.9302,
+      "Unknown": 0.9841
     }
   },
   "best_hyperparameters": {
-    "learning_rate": 3.3212947485581434e-05,
-    "weight_decay": 0.03380524887757227,
-    "num_train_epochs": 4
+    "learning_rate": 1.1649367488403433e-05,
+    "weight_decay": 0.2419738682252902,
+    "num_train_epochs": 5
   },
   "optuna_n_trials": 5
 }

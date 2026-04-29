@@ -25,7 +25,7 @@ Response:
 ```json
 {
   "input": "...",
-  "prediction": "high_priority",
+  "prediction": "Tinggi",
   "confidence": 0.92
 }
 ```
