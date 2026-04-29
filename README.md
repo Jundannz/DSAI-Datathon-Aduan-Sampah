@@ -30,7 +30,7 @@ Response:
 }
 ```
 
-### NER (Named Entity Recognition)
+### NER (Named Entity Recognition) 
 **POST** `/predict/ner`
 ```json
 {
