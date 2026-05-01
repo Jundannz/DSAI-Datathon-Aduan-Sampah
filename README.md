@@ -21,7 +21,7 @@ API untuk klasifikasi prioritas aduan sampah dan ekstraksi lokasi (NER) dari tek
   "text": "Sampah menumpuk di depan rumah sudah 3 hari tidak diangkut"
 }
 ```
-Response:
+Response: 
 ```json
 {
   "input": "...",
